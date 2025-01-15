@@ -9,6 +9,10 @@ const firebaseConfig = {
   measurementId: "G-4NMZBF1QHG"
 };
 
+db.push({ test: "Hello, Firebase!" })
+  .then(() => console.log("Test message added to database"))
+  .catch((error) => console.error("Error writing to database:", error));
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
